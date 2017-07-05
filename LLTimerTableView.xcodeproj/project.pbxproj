@@ -15,6 +15,8 @@
 		75A3B4FE1F0C87840008DACE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A3B4FC1F0C87840008DACE /* LaunchScreen.storyboard */; };
 		75A3B5091F0C87840008DACE /* LLTimerTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A3B5081F0C87840008DACE /* LLTimerTableViewTests.m */; };
 		75A3B5141F0C87840008DACE /* LLTimerTableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A3B5131F0C87840008DACE /* LLTimerTableViewUITests.m */; };
+		75A3B5231F0C882F0008DACE /* LLTimerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A3B5221F0C882F0008DACE /* LLTimerTableViewCell.m */; };
+		75A3B5261F0C90790008DACE /* LLTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A3B5251F0C90790008DACE /* LLTimerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		75A3B50F1F0C87840008DACE /* LLTimerTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLTimerTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A3B5131F0C87840008DACE /* LLTimerTableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLTimerTableViewUITests.m; sourceTree = "<group>"; };
 		75A3B5151F0C87840008DACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75A3B5211F0C882F0008DACE /* LLTimerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTimerTableViewCell.h; sourceTree = "<group>"; };
+		75A3B5221F0C882F0008DACE /* LLTimerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTimerTableViewCell.m; sourceTree = "<group>"; };
+		75A3B5241F0C90790008DACE /* LLTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTimerViewController.h; sourceTree = "<group>"; };
+		75A3B5251F0C90790008DACE /* LLTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTimerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				75A3B4F21F0C87840008DACE /* AppDelegate.m */,
 				75A3B4F41F0C87840008DACE /* ViewController.h */,
 				75A3B4F51F0C87840008DACE /* ViewController.m */,
+				75A3B5241F0C90790008DACE /* LLTimerViewController.h */,
+				75A3B5251F0C90790008DACE /* LLTimerViewController.m */,
+				75A3B5211F0C882F0008DACE /* LLTimerTableViewCell.h */,
+				75A3B5221F0C882F0008DACE /* LLTimerTableViewCell.m */,
 				75A3B4F71F0C87840008DACE /* Main.storyboard */,
 				75A3B4FA1F0C87840008DACE /* Assets.xcassets */,
 				75A3B4FC1F0C87840008DACE /* LaunchScreen.storyboard */,
@@ -277,8 +287,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				75A3B4F61F0C87840008DACE /* ViewController.m in Sources */,
+				75A3B5231F0C882F0008DACE /* LLTimerTableViewCell.m in Sources */,
 				75A3B4F31F0C87840008DACE /* AppDelegate.m in Sources */,
 				75A3B4F01F0C87840008DACE /* main.m in Sources */,
+				75A3B5261F0C90790008DACE /* LLTimerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

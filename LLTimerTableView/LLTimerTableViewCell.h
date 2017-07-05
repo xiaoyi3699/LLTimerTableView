@@ -10,4 +10,6 @@
 
 @interface LLTimerTableViewCell : UITableViewCell
 
+- (void)setConfigWithSecond:(NSInteger)second;
+
 @end

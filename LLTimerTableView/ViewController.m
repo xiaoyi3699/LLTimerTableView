@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LLTimerViewController.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0, 60, 30);
+    btn.backgroundColor = [UIColor blackColor];
+    btn.layer.masksToBounds = YES;
+    btn.layer.cornerRadius = 5;
+    [btn setTitle:@"点击" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    btn.center = self.view.center;
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)btnClick:(UIButton *)btn {
+    LLTimerViewController *timerVC = [[LLTimerViewController alloc] init];
+    [self presentViewController:timerVC animated:YES completion:nil];
 }
-
 
 @end
