@@ -55,6 +55,17 @@
     [self.view addSubview:_tableView];
     
     [self ll_reloadData];
+    
+    //监听程序进入前台
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(applicationDidBecomeActive:)
+                                                 name:UIApplicationDidBecomeActiveNotification
+                                               object:nil];
+}
+
+//当程序从后台进入时，重新刷新tableView
+- (void)applicationDidBecomeActive:(NSNotification *)notification {
+    [_tableView reloadData];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -94,6 +105,7 @@
 }
 
 - (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     NSLog(@"释放");
 }
 
