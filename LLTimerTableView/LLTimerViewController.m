@@ -48,7 +48,6 @@
     rect.origin.y = 64;
     rect.size.height -= 64;
     _tableView = [[UITableView alloc] initWithFrame:rect];
-    _tableView.tag = 99;
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.tableFooterView = [UIView new];
@@ -63,11 +62,7 @@
                                                object:nil];
 }
 
-//当程序从后台进入时，重新刷新tableView
-- (void)applicationDidBecomeActive:(NSNotification *)notification {
-    [_tableView reloadData];
-}
-
+#pragma mark - UITableViewDelegate,UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return _times.count;
 }
@@ -83,6 +78,13 @@
     return cell;
 }
 
+#pragma mark - private method
+//当程序从后台进入时，重新刷新tableView
+- (void)applicationDidBecomeActive:(NSNotification *)notification {
+    [_tableView reloadData];
+}
+
+//交互事件
 - (void)btnClick:(UIButton *)btn {
     if (btn.tag == 0) {//返回
         [self dismissViewControllerAnimated:YES completion:nil];
@@ -92,6 +94,7 @@
     }
 }
 
+//模拟刷新数据
 - (void)ll_reloadData {
     
     //每一次刷新数据时，重置初始时间
