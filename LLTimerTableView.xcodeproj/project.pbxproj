@@ -443,6 +443,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N6X5V58LVJ;
 				INFOPLIST_FILE = LLTimerTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mr.Wang.LLTimerTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -455,6 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N6X5V58LVJ;
 				INFOPLIST_FILE = LLTimerTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mr.Wang.LLTimerTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -530,6 +532,7 @@
 				75A3B51A1F0C87840008DACE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75A3B51B1F0C87840008DACE /* Build configuration list for PBXNativeTarget "LLTimerTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +541,7 @@
 				75A3B51D1F0C87840008DACE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75A3B51E1F0C87840008DACE /* Build configuration list for PBXNativeTarget "LLTimerTableViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +550,7 @@
 				75A3B5201F0C87840008DACE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
